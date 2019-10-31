@@ -1,3 +1,3 @@
-# Human emotion detection via visual, facial expressions - a seven-category classifier
+# Human facial emotion detection - a seven-category CV classifier
 
 *a work in progress*
