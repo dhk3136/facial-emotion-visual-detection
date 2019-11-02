@@ -7,7 +7,7 @@ Human emotion detection is a downstream task of Computer Vision. Classification 
 This project attempts to build upon past work to achieve higher marks in accuracy using a keras CNN implementation. The task is to accurately classify seven different emotions from the given images: Angry, Sad, Happy, Fear, Disgust, Surprise, and Neutral.
 
 ### Data
-I use the FER dataset featured in "Challenges in Representation Learning: A report on three machine learning contests," authored by well-known GAN innovator, Ian Goodfellow. The dataset features actors in various states of facial expression which are to be classified into the categories denoted above.
+I use the [FER dataset](https://arxiv.org/abs/1307.0414) featured in "Challenges in Representation Learning: A report on three machine learning contests," authored by well-known GAN innovator, Ian Goodfellow. The dataset features actors in various states of facial expression which are to be classified into the categories denoted above.
 
 The data was divided into train/test sets of 28709 and 3589 expressions, respectively.  
 
