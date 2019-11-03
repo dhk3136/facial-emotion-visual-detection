@@ -15,7 +15,13 @@ The data was divided into train/test sets of 28709 and 3589 expressions, respect
 
 ![dee](img/dee_256.png)
 ![plot_dee](img/plot_dee.png)
+> Kandyse McClure, better known as "Dee" in the remake of Battlestar Galactica  
+
 My best results achieved an accuracy of 0.58 which is quite an improvement over scores from when the dataset was initially released--although I concede I was hoping for a better improvement, overall. Training was conducted between a range of 5 epochs to 100 epochs. Despite the vast difference in the length of training runs, results did not vary much: at most, a 0.07 difference was observed based on the number of epochs.
+
+![kate_winslet](img/kate_winslet_256.png)
+![plot_kate_winslet](img/plot_kate_winslet.png) 
+> Kate Winslet shoots an ambiguous expression across the car  
 
 Overfitting was a major problem. Typically, in multi-class categorizations, annotators are given permission to tag more than one category which in turn creates multicollinearity in the data. For example, it's possible for an expression to be considered as Neutral, Angry, and Sad (to be fair, at differing probabilities).  
 
