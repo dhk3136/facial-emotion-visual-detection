@@ -1,7 +1,7 @@
 # Human facial emotion detection - a seven-category CV classifier
 
 ### Overview
-Human emotion detection is a downstream task of Computer Vision. Classification of human emotions remains a difficult endeavor for ML and CV practitioners despite major advances in both network architectures and algorithms. Just a few years ago, SOTA scores hovered around the 0.37 accuracy mark.
+Human emotion detection is a downstream task of Computer Vision. Classification of human emotions remains a difficult endeavor for ML and CV practitioners despite major advances in both network architectures and algorithms. Just a few years ago, SOTA scores hovered around the 0.37 accuracy mark. For good reason, human emotion detection still is considered a nascent practice. In part because human emotions are so complex, but perhaps even mores the links and correlations between or among emotions are expected to overlap in a fluent way rather than a strict classification. Yet, this early research is crucial as the use cases in real-life situations can range from police interrogation to psychiatric evaluation to social abuses of an overdetermined way to see how one might feel about another (e.g., a first date).  
 
 ### Purpose
 This project attempts to build upon past work to achieve higher marks in accuracy using a keras CNN implementation. The task is to accurately classify seven different emotions from the given images: Angry, Sad, Happy, Fear, Disgust, Surprise, and Neutral.
@@ -24,6 +24,12 @@ My best results achieved an accuracy of 0.58 which is quite an improvement over 
 > Kate Winslet shoots an ambiguous expression across the car  
 
 Overfitting was a major problem. Typically, in multi-class categorizations, annotators are given permission to tag more than one category which in turn creates multicollinearity in the data. For example, it's possible for an expression to be considered as Neutral, Angry, and Sad (to be fair, at differing probabilities).  
+
+Given the rationale offered for overfitting is a homoscedastistic one, another problem arises that is more difficult to pin down. For example, despite the number of iterations, the accuracy on the val set tends to stay within a 0.7 margin. Even so, slight alterations in the number of training iterations can yield dramatically different results despite the stable and consistent val scores. Here, two plots of the same photo of Ted Danson demonstrate this anomaly:
+
+![ted_danson_pic](img/ted_danson_256.png)
+![ted_danson_plot1](img/plot_ted_danson.png)
+![ted_danson_plot2](img/plot2_ted_danson.png)  
 
 After fine-tuning hyperparameters, I was able to fit training data much more closely to validation sets and reduce overfitting. 15 epochs seemed to be the sweet spot for running inference. In addition, I introduced another round of layers (dropout, dense) and changed batch sizes in a range between 128-1024. This tuning greatly improved performance.
 
