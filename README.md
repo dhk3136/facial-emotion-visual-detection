@@ -28,8 +28,8 @@ Overfitting was a major problem. Typically, in multi-class categorizations, anno
 Given the rationale offered for overfitting is a homoscedastistic one, another problem arises that is more difficult to pin down. For example, despite the number of iterations, the accuracy on the val set tends to stay within a 0.7 margin. Even so, slight alterations in the number of training iterations can yield dramatically different results despite the stable and consistent val scores. Here, two plots of the same photo of Ted Danson demonstrate this anomaly:
 
 ![ted_danson_pic](img/ted_danson_256.png)
-![ted_danson_plot1](img/plot_ted_danson.png)
-![ted_danson_plot2](img/plot2_ted_danson.png)  
+![ted_danson_plot1](img/plot_ted_danson_280.png)
+![ted_danson_plot2](img/plot2_ted_danson_280.png)  
 
 After fine-tuning hyperparameters, I was able to fit training data much more closely to validation sets and reduce overfitting. 15 epochs seemed to be the sweet spot for running inference. In addition, I introduced another round of layers (dropout, dense) and changed batch sizes in a range between 128-1024. This tuning greatly improved performance.
 
