@@ -1,4 +1,5 @@
-# Human Facial Emotion Detection: A 7-Category Classifier
+# Human Facial Emotion Detection
+### [TODO: NEEDS EMOTIONAL FACE COLLAGE HEADER IMG]
 
 ### Daniel Kim
 
@@ -21,7 +22,9 @@ The data was divided into train/test sets of 28709 and 3589 expressions, respect
 ![plot_dee](img/plot_dee.png)
 > Kandyse McClure, better known as "Dee" in the remake of Battlestar Galactica  
 
-My best results achieved an accuracy of 0.58 which is quite an improvement over scores from when the dataset was initially released--although I concede I was hoping for a better improvement, overall. Training was conducted between a range of 5 epochs to 100 epochs. Despite the vast difference in the length of training runs, results did not vary much: at most, a 0.07 difference was observed based on the number of epochs.
+I should note I avoided using hyperbolic examples of emotion and instead opted for what are--to my human eyes, anyway--examples of complex emotion. The algorithm did quite well in extreme cases, e.g., correctly classifying what appears to be an overjoyed baby. The "neutral" category, however, was the most confounding to the testing, and in some ways I wished the annotators did not have that option to avoid confusion (more on this below).
+
+My best results achieved an accuracy of 0.58 which is quite an improvement over scores from when the dataset was initially released--although I concede I was hoping for a better improvement, overall. Training was conducted between a range of 5 epochs to 100 epochs and at a wide latitude of batch sizes. Despite the vast difference in the length of training runs, results did not vary much: at most, a 0.07 difference was observed based on the number of epochs.
 
 ![kate_winslet](img/kate_winslet_256.png)
 ![plot_kate_winslet](img/plot_kate_winslet.png) 
