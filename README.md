@@ -1,5 +1,5 @@
 # Human Facial Emotion Detection
-### [TODO: NEEDS EMOTIONAL FACE COLLAGE HEADER IMG]
+![celebrity_faces](img/header_celebrity_faces.png)
 
 ### Daniel Kim
 
