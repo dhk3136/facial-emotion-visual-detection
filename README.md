@@ -1,5 +1,5 @@
 # Human Facial Emotion Detection
-![celebrity_faces](img/header_celebrity_faces.png)
+![celebrity_face_collage](img/header_celebrity_emotions.png)
 
 ### Daniel Kim
 
