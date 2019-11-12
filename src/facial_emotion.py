@@ -106,7 +106,8 @@ model.add(Dropout(0.2))
 ---------------------------------------------------------------------------------
 # ADDED ANOTHER DROPOUT LAYER FOLLOWED BY ANOTHER DENSE AND DROPOUT LAYER
 # BEST PERFORMANCE SO FAR WITH 512 BATCH SIZE AND 5-15 EPOCHS
-# LESS SO AT 100 EPOCHS
+# OVERFITTING REDUCED SUBSTANTIALLY AT LOWER TRAINING RATE WITHOUT LOSING ACC
+# PERFORMANCE DIPS AT VALIDATION WHEN TRAINING AT 100 EPOCHS
 -------------------------------------------------------------
 
 # can uncomment the line below if using larger batch size or more iterations
